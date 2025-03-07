@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historial de {{ employee.first_name }} {{ employee.last_name }}</title>
+</head>
+<body>
+    <h1>Historial de {{ employee.first_name }} {{ employee.last_name }}</h1>
+    <ul>
+        {% for entry in history %}
+        <li>{{ entry.change_type }} - {{ entry.description }} ({{ entry.date }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'employee_list' %}">Volver</a>
+</body>
+</html>

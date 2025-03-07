@@ -1,9 +1,7 @@
 from django.contrib import admin
-
-from django.contrib import admin
-from .models import Department, Employee, Attendance, Vacation
+from .models import Department, Role, Employee, EmployeeHistory
 
 admin.site.register(Department)
+admin.site.register(Role)
 admin.site.register(Employee)
-admin.site.register(Attendance)
-admin.site.register(Vacation)
+admin.site.register(EmployeeHistory)
